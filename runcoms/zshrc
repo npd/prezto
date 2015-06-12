@@ -11,3 +11,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+path[1,0]=~/bin
+
+zstyle ':completion:*' special-dirs true
+setopt dvorak
+
+REPORTTIME=5
+export OMP_NUM_THREADS=2
+unalias gs
